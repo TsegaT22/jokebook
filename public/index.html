@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jokebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎭 Jokebook</h1>
+    <p>Let's make eachother laugh!</p>
+  </header>
+
+  <main>
+    <section id="random-joke" class="card">
+      <h2>Random Joke</h2>
+      <p id="random-text">Loading...</p>
+      <button id="refreshRandom">Random Joke</button>
+    </section>
+
+    <section id="categories" class="card">
+      <h2>Categories</h2>
+      <button id="loadCategories">Load Categories</button>
+      <ul id="categoryList"></ul>
+    </section>
+
+    <section id="search" class="card">
+      <h2>Search by Category</h2>
+      <div class="search-bar">
+        <input id="categoryInput" placeholder="Enter category name">
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <section id="joke-list" class="card">
+      <h2>Jokes</h2>
+      <ul id="jokesList"></ul>
+    </section>
+
+    <section id="add-joke" class="card">
+      <h2>Add a New Joke</h2>
+      <div class="form-group">
+        <input id="addCategory" placeholder="category" />
+        <input id="addSetup" placeholder="setup" />
+        <input id="addDelivery" placeholder="delivery" />
+        <button id="addBtn">Add Joke</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
